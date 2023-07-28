@@ -17,4 +17,4 @@ app.use(cors());
 app.use("/api", productRouter);
 app.use("/", ...swagger);
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
